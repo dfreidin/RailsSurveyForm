@@ -1,0 +1,17 @@
+<form action="<%= surveys_submit_url %>" method="POST">
+    <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+    <p>Your Name: <input type="text" name="name"></p>
+    <p>Dojo Location: <select>
+        <option>Mountain View</option>
+        <option>Seattle</option>
+        <option>New York</option>
+    </select></p>
+    <p>Favorite Language: <select>
+        <option>Javascript</option>
+        <option>Python</option>
+        <option>Ruby</option>
+    </select></p>
+    <p>Comment (optional):</p>
+    <textarea name="comment"></textarea>
+    <p><input type="submit" value="submit"></p>
+</form>
